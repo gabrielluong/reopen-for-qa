@@ -1,0 +1,15 @@
+name: 'Reopen for QA Needed'
+description: 'Reopens issues that needs to be QA.'
+inputs:
+  github-token:
+    required: true
+    description: 'A GitHub access token with write access to the project.'
+  reopen-label:
+    required: true
+    description: 'Label for associated issues that needs to be reopened.'
+  qa-label:
+    required: true
+    description: 'Label for issues that needs QA.'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
